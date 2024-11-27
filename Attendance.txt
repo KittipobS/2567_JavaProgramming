@@ -1,4 +1,4 @@
 studentId:2413111002
 studentName:Kittipob Sirithanapipat
-Topic:gitHub
-Date:11/20/2024
+Topic:Display, Variable and Input
+Date:11/27/2024
