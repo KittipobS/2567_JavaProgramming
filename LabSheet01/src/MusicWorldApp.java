@@ -9,13 +9,15 @@ public class MusicWorldApp {
 		double priceCD = Double.parseDouble(JOptionPane.showInputDialog("Please enter the price of the CD in U.S. dollars"));
 		double quantity = Double.parseDouble(JOptionPane.showInputDialog("Please enter the quantity to be purchased"));
 		double subtotal = priceCD * quantity;
-		double cdTotal = subtotal + (subtotal * 6.25);
+		double tax = subtotal * 6.25 / 100;
+		double cdTotal = subtotal + tax;
+		String frmquantity = String.format("%,.0f" , quantity);
 		JOptionPane.showMessageDialog(null,"Summary of the transaction:" +
 				"\n\nCD ID: " + id +
 				"\nCD Title: " + title +
-				"\nCD Unit Price: " + priceCD +
-				"\nCD Quantity: " + quantity +
-				"\n\nSubtotal: " + subtotal +
+				"\nCD Unit Price: $" + priceCD +
+				"\nCD Quantity: " + frmquantity +
+				"\n\nSubtotal: $" + subtotal +
 				"\nTax rate: 6.25%" +
 				"\nTotal: $" + cdTotal +
 				"\n\nEnd of Program");
