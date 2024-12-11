@@ -19,16 +19,16 @@ public class IncomeTaxCalculator {
 
 		
 		if (taxableIncome <= 20000) {
-			taxPayable = taxableIncome + (taxableIncome * TAX_RATE_ABOVE_20K);
+			taxPayable = taxableIncome * 0;
 			} else if (taxableIncome <= 40000) {
-				taxPayable = taxableIncome + (taxableIncome * TAX_RATE_ABOVE_40K);
+				taxPayable = (taxableIncome * TAX_RATE_ABOVE_20K) - 2000;
 			} else if (taxableIncome <= 60000) {
-				taxPayable = taxableIncome + (taxableIncome * TAX_RATE_ABOVE_60K);
+				taxPayable = taxableIncome * TAX_RATE_ABOVE_40K;
 			} else {
-				taxPayable = taxableIncome + (taxableIncome * TAX_RATE_ABOVE_60K);
+				taxPayable = taxableIncome * TAX_RATE_ABOVE_60K;
 			}
 		
-		System.out.print("The income tax payable is: " + taxPayable);
+		System.out.printf("The income tax payable is: %,.2f" , taxPayable);
 		
 		
 		scan.close();
