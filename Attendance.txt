@@ -1,4 +1,4 @@
 studentId:2413111002
 studentName:Kittipob Sirithanapipat
-Topic:Control Statements and Confirm Dialog box
-Date:12/04/2024
+Topic:String Method
+Date:12/11/2024
