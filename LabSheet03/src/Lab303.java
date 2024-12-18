@@ -1,37 +1,28 @@
 import java.util.*;
-
 public class Lab303 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Scanner scan = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
+		int countSpace=0;
+		System.out.print("Input a sentence: ");
+		String sentence = input.nextLine();
 		
-		String sentence = "";
-		int space = 0;
-		int word = 0;
-		
-		System.out.print("Input a sentence : ");
-		sentence = scan.nextLine();
-		
-		while (!sentence.endsWith(".")) {
-			System.out.print("Input a sentence, again : ");
-			sentence = scan.nextLine();
+		while(!sentence.endsWith(".")) {
+			System.out.print("Input a sentence, again: ");
+			sentence = input.nextLine();
 		}
+		
 		for (int i = 0; i < sentence.length(); i++) {
-			char ch = sentence.charAt(i);
-			
-			if (ch == ' ') {
-				space++;
-			}else {
-				word++;
+			if(sentence.charAt(i)== ' ') {
+				countSpace++;
+				
 			}
-			
-			
 		}
-		System.out.println("\nThis sentence has " + space + " spacebar.");
-		System.out.println("This sentence has " + word + " word.");
 		
-		scan.close();
+		System.out.println();
+		System.out.println("This sentence has " + countSpace + " spacebar.");
+		System.out.println("This sentence has " + (countSpace+1) + " word.");
+
 	}
 
 }
