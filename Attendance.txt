@@ -1,4 +1,4 @@
 studentId:2413111002
 studentName:Kittipob Sirithanapipat
-Topic:Method
-Date:12/18/2024
+Topic:Array and Array Method
+Date:12/25/2024
