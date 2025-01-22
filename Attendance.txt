@@ -1,4 +1,4 @@
 studentId:2413111002
 studentName:Kittipob Sirithanapipat
-Topic:Class and Object
-Date:1/15/2025
+Topic:Encapsulation Concept
+Date:1/22/2025
